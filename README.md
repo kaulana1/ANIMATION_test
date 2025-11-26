@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Animation Prototype with Lovable
 
 ## Project info
 
