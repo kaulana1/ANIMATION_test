@@ -14,27 +14,46 @@ Simply visit the [Lovable Project](https://lovable.dev/projects/db743541-c0dd-48
 
 Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+**Use Your Preffered IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using VS Code or another editor, you can clone this repository and push changes normally.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Make sure you have Node.js & npm or pnpm installed:
+
+Install Node with nvm
+
+Or install pnpm:
+
+```sh
+npm install -g pnpm
+```
 
 Follow these steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository using your GitHub URL.
+git clone <YOUR_GITHUB_REPO_URL>
 
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
 # Step 3: Install the necessary dependencies.
-npm i
+pnpm install
+# or
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server.
+pnpm dev
+# or
 npm run dev
 ```
+
+Your app will be available at:
+
+```sh
+http://localhost:5173
+```
+
 
 **Edit a file directly in GitHub**
 
@@ -59,10 +78,10 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/db743541-c0dd-4869-9526-553d78423371) and click on Share -> Publish.
+- Framer Motion
+- Sonner
+- Canvas-confetti
+- Lucide-react
 
 ## Can I connect a custom domain to my Lovable project?
 
