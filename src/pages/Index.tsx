@@ -46,6 +46,10 @@ const Index = () => {
       prev.map((a) => (a.id === id ? { ...a, status: "completed" as const } : a))
     );
     setShowCelebration(true);
+  };
+
+  const handleCelebrationClose = () => {
+    setShowCelebration(false);
     setSelectedAssignment(null);
   };
 
@@ -166,7 +170,7 @@ const Index = () => {
       {/* Celebration Modal */}
       <CelebrationModal
         isOpen={showCelebration}
-        onClose={() => setShowCelebration(false)}
+        onClose={handleCelebrationClose}
         title="Assignment Complete!"
         message="Awesome work! You're making great progress."
         points={100}

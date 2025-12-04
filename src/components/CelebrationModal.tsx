@@ -62,7 +62,7 @@ export const CelebrationModal = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50"
+            className="fixed inset-0 bg-background/80 backdrop-blur-sm z-[100]"
             onClick={onClose}
           />
           <motion.div
@@ -70,9 +70,9 @@ export const CelebrationModal = ({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.5 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md"
+            className="fixed inset-0 flex items-center justify-center z-[100] p-4"
           >
-            <div className="bg-card rounded-2xl shadow-2xl p-8 text-center border-2 border-success">
+            <div className="bg-card rounded-2xl shadow-2xl p-8 text-center border-2 border-success w-full max-w-md">
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
