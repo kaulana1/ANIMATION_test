@@ -50,7 +50,6 @@ const Index = () => {
 
   const handleCelebrationClose = () => {
     setShowCelebration(false);
-    setSelectedAssignment(null);
   };
 
   const handleError = () => {
